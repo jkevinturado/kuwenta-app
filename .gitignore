@@ -1,0 +1,6 @@
+docs/sample-receipts
+.env
+.env.*
+node_modules
+dist
+.cache

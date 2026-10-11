@@ -1,0 +1,278 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="prd" id="prd">
+    <mxGraphModel background="#ffffff" dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1440" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="awsCloud" value="AWS Cloud&lt;br&gt;Kuwenta – prd account (ap-southeast-1)" style="points=[];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="10" width="1520" height="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="vpc" value="VPC" style="points=[];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#248814;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="850" width="470" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="azA" value="Availability Zone - A" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="890" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="subnetA" value="Private Subnet" style="points=[];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1355" y="920" width="400" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="azC" value="Availability Zone - C" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1085" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="subnetC" value="Private Subnet" style="points=[];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="1355" y="1115" width="400" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="subnetCNote" value="DB subnet group only&lt;br&gt;(no instance running here)" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#147EBA;" vertex="1" parent="1">
+          <mxGeometry x="1455" y="1145" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="google" value="Google Cloud (external)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#5F6368;verticalAlign=top;align=left;spacingLeft=10;fontColor=#232F3E;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="270" width="270" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="users" value="Users" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.users;" vertex="1" parent="1">
+          <mxGeometry x="20" y="560" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" value="Browser&lt;br&gt;React + Vite app&lt;br&gt;(pdf.js parses statements locally)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="150" y="560" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="&lt;b&gt;S3&lt;/b&gt;&lt;br&gt;Static React build" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;labelPosition=right;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="380" y="330" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudfront" value="&lt;b&gt;CloudFront&lt;/b&gt;&lt;br&gt;Default *.cloudfront.net domain" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;" vertex="1" parent="1">
+          <mxGeometry x="380" y="560" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="waf" value="&lt;b&gt;WAF&lt;/b&gt;&lt;br&gt;Web ACL (us-east-1)&lt;br&gt;SQLi · IP reputation · Bearer header&lt;br&gt;(OAuth callback excluded)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.waf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="790" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="cognito" value="&lt;b&gt;Cognito&lt;/b&gt;&lt;br&gt;User pool (Essentials)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cognito;" vertex="1" parent="1">
+          <mxGeometry x="620" y="90" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ses" value="&lt;b&gt;SES&lt;/b&gt;&lt;br&gt;Verification &amp;amp; reset emails" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.simple_email_service;" vertex="1" parent="1">
+          <mxGeometry x="620" y="300" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="apigw" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br&gt;HTTP API&lt;br&gt;JWT authorizer (Cognito)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" vertex="1" parent="1">
+          <mxGeometry x="620" y="560" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="lPostConf" value="&lt;b&gt;Lambda&lt;/b&gt;&lt;br&gt;Post-confirmation trigger" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="880" y="40" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="lPreSignup" value="&lt;b&gt;Lambda&lt;/b&gt;&lt;br&gt;Pre-sign-up trigger&lt;br&gt;(optional allowlist)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="740" y="190" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="lGmailConnect" value="&lt;b&gt;Lambda&lt;/b&gt;&lt;br&gt;Gmail connect&lt;br&gt;(start + public callback)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="880" y="328.5" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="lReconcile" value="&lt;b&gt;Lambda&lt;/b&gt;&lt;br&gt;Reconcile" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="880" y="560" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="lExpenses" value="&lt;b&gt;Lambda&lt;/b&gt;&lt;br&gt;Expenses (review / confirm)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="880" y="950" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ddb" value="&lt;b&gt;DynamoDB&lt;/b&gt;&lt;br&gt;Users, settings, sender allowlist,&lt;br&gt;Gmail cursor, encrypted tokens,&lt;br&gt;OAuth state (TTL), pending items (TTL 7 d),&lt;br&gt;Gemini output (TTL 60 d)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;labelPosition=right;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="150" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="kms" value="&lt;b&gt;KMS&lt;/b&gt;&lt;br&gt;Gmail token key" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.key_management_service;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="400" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="secrets" value="&lt;b&gt;Secrets Manager&lt;/b&gt;&lt;br&gt;Aurora credentials&lt;br&gt;(master + app user)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.secrets_manager;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1100" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="aurora" value="&lt;b&gt;Aurora Serverless v2&lt;/b&gt;&lt;br&gt;PostgreSQL 16.3+&lt;br&gt;Min 0 ACU (auto-pause)&lt;br&gt;Expenses data" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;labelPosition=right;verticalLabelPosition=middle;verticalAlign=middle;align=left;spacingLeft=8;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.aurora;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="950" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="cwlogs" value="CloudWatch Logs" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F34482;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="1270" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ssm" value="SSM Parameter Store&lt;br&gt;(origin secret, Gemini key,&lt;br&gt;OAuth client secret)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F34482;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.systems_manager;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="1270" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" value="IAM" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="1270" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gOAuth" value="&lt;b&gt;Google OAuth&lt;/b&gt;&lt;br&gt;gmail.readonly consent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4285F4;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="1905" y="335" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="gGmail" value="&lt;b&gt;Gmail API&lt;/b&gt;&lt;br&gt;Bank, e-wallet and&lt;br&gt;merchant receipts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#EA4335;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="1905" y="490" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="gGemini" value="&lt;b&gt;Gemini API&lt;/b&gt;&lt;br&gt;3.5 Flash-Lite, paid tier,&lt;br&gt;structured output" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#34A853;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="1905" y="630" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" value="&lt;font color=&quot;#FF0000&quot;&gt;* Lambda → CloudWatch Logs arrows omitted for clarity.&lt;br&gt;* Lambda → SSM arrows omitted: Gmail connect, Reconcile and Import read the Gemini key and Google OAuth client secret from SSM.&lt;br&gt;* All Lambdas run outside the VPC; Aurora is reached only via the RDS Data API (no NAT Gateway).&lt;br&gt;* API Gateway rejects requests without the CloudFront secret origin header (read from SSM).&lt;br&gt;* Statement PDFs and their passwords never leave the browser; only parsed rows reach the API.&lt;br&gt;* Dashed = optional or configuration link. Staging: same layout in a separate account, without WAF, Gemini free tier, Cognito's default email sender and a testing-mode OAuth client.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=top;fontSize=11;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1270" width="900" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lImport" value="&lt;b&gt;Lambda&lt;/b&gt;&lt;br&gt;Import (statement rows)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="880" y="750" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="otherExt" value="Other external" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#5F6368;verticalAlign=top;align=left;spacingLeft=10;fontColor=#232F3E;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="760" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fxApi" value="&lt;b&gt;FX rate API&lt;/b&gt;&lt;br&gt;ECB reference rates (optional)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;fontColor=#232F3E;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="1905" y="795" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;" edge="1" parent="1" source="users" target="browser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="browser" target="cloudfront">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="Sign-up / sign-in (managed login)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="browser" target="cognito">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Static assets (OAC)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="cloudfront" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="/api/* (no cache)&lt;br&gt;+ secret origin header" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="cloudfront" target="apigw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;dashed=1;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.8;entryDx=0;entryDy=0;" edge="1" parent="1" source="waf" target="cloudfront">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="318" y="829" />
+              <mxPoint x="318" y="622.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="Emails (prd)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cognito" target="ses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="148.5" />
+              <mxPoint x="570" y="339" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="On confirm sign-up" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="cognito" target="lPostConf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="Before sign-up" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cognito" target="lPreSignup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="Create user item&lt;br&gt;(conditional put)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lPostConf" target="ddb">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1289" y="79" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="Connect Gmail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="apigw" target="lGmailConnect">
+          <mxGeometry relative="1" as="geometry" x="0.59">
+            <Array as="points">
+              <mxPoint x="720" y="579.5" />
+              <mxPoint x="720" y="367.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="Reconcile" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="apigw" target="lReconcile">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="Review / confirm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="apigw" target="lExpenses">
+          <mxGeometry relative="1" as="geometry" x="0.74">
+            <Array as="points">
+              <mxPoint x="740" y="630.2" />
+              <mxPoint x="740" y="989" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="Consent + code exchange&lt;br&gt;(state + PKCE)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lGmailConnect" target="gOAuth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="Store state / encrypted token" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lGmailConnect" target="ddb">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1289" y="344.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="Encrypt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="lGmailConnect" target="kms">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="390.9" />
+              <mxPoint x="1420" y="419.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" value="Decrypt token" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.37;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="lReconcile" target="kms">
+          <mxGeometry relative="1" as="geometry" x="-0.2">
+            <Array as="points">
+              <mxPoint x="1440" y="588.86" />
+              <mxPoint x="1440" y="458.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" value="Read settings / write pending items" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lReconcile" target="ddb">
+          <mxGeometry relative="1" as="geometry" x="-0.55">
+            <Array as="points">
+              <mxPoint x="1289" y="567.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" value="Fetch emails since cursor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.63;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lReconcile" target="gGmail">
+          <mxGeometry relative="1" as="geometry" x="0.2">
+            <Array as="points">
+              <mxPoint x="1720" y="609.14" />
+              <mxPoint x="1720" y="522.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" value="Parse receipts (account, card and mobile numbers redacted)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="lReconcile" target="gGemini">
+          <mxGeometry relative="1" as="geometry" x="0.08">
+            <Array as="points">
+              <mxPoint x="1760" y="630.2" />
+              <mxPoint x="1760" y="649.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" value="RDS Data API (HTTPS)&lt;br&gt;Wakes paused writer, retries" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lExpenses" target="aurora">
+          <mxGeometry relative="1" as="geometry" x="0.03">
+            <mxPoint x="0" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" value="Secret ARN&lt;br&gt;(resolved by Data API)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;dashed=1;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lExpenses" target="secrets">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="1020.2" />
+              <mxPoint x="1080" y="1139" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eApiImport" value="Statements" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="apigw" target="lImport">
+          <mxGeometry relative="1" as="geometry" x="0.66">
+            <Array as="points">
+              <mxPoint x="760" y="618.5" />
+              <mxPoint x="760" y="789" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eImpDdb" value="Write pending items" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lImport" target="ddb">
+          <mxGeometry relative="1" as="geometry" x="-0.56">
+            <Array as="points">
+              <mxPoint x="1289" y="773.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eImpGem" value="Categorize / parse unknown formats" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="lImport" target="gGemini">
+          <mxGeometry relative="1" as="geometry" x="0.01">
+            <Array as="points">
+              <mxPoint x="1800" y="804.6" />
+              <mxPoint x="1800" y="675.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eExpFx" value="Reference FX rate (optional)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;dashed=1;exitX=1;exitY=0.1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lExpenses" target="fxApi">
+          <mxGeometry relative="1" as="geometry" x="0.51">
+            <Array as="points">
+              <mxPoint x="1010" y="957.8" />
+              <mxPoint x="1010" y="827.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eExpDdb" value="Pending items / cursor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lExpenses" target="ddb">
+          <mxGeometry relative="1" as="geometry" x="-0.64">
+            <Array as="points">
+              <mxPoint x="1289" y="973.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
