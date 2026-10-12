@@ -4,7 +4,7 @@
 |---|---|
 | Project | Kuwenta – personal finance and expense tracker (Gmail + Gemini, on AWS) |
 | Document | Product & technical requirements |
-| Version | 1.6 (Draft) – links to tech stack and external API docs |
+| Version | 1.7 (Draft) – diagrams moved to docs/design/ |
 | Date | 11 October 2026 |
 | Status | Draft – for review |
 
@@ -51,11 +51,11 @@ The first release serves one user (the owner). The design keeps the door open fo
 
 | Diagram | Shows |
 |---|---|
-| [kuwenta-aws-prd.drawio.svg](kuwenta-aws-prd.drawio.svg) | Prd architecture: every AWS and external component and how they connect |
-| [kuwenta-sequence.drawio.svg](kuwenta-sequence.drawio.svg) | Who calls whom, in order: sign in, connect Gmail, reconcile, statement upload, review and confirm, dashboard |
-| [kuwenta-flow.drawio.svg](kuwenta-flow.drawio.svg) | The user-facing process as a flowchart, split into You (browser), Kuwenta (AWS) and external services |
+| [design/kuwenta-aws-overview.drawio.svg](design/kuwenta-aws-overview.drawio.svg) | Prd architecture: every AWS and external component and how they connect |
+| [design/kuwenta-sequence-diagram.drawio.svg](design/kuwenta-sequence-diagram.drawio.svg) | Who calls whom, in order: sign in, connect Gmail, reconcile, statement upload, review and confirm, dashboard |
+| [design/kuwenta-flow.drawio.svg](design/kuwenta-flow.drawio.svg) | The user-facing process as a flowchart, split into You (browser), Kuwenta (AWS) and external services |
 
-Edit the `.drawio` files in draw.io; the `.svg` files are exports with the diagram embedded, so they open for editing in draw.io too.
+The diagrams live in `docs/design/`. Edit the `.drawio` files in draw.io; the `.svg` files are exports with the diagram embedded, so they open for editing in draw.io too.
 
 ## Related documents
 

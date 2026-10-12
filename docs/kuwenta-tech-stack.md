@@ -4,10 +4,10 @@
 |---|---|
 | Project | Kuwenta – personal finance and expense tracker |
 | Document | Tech stack: languages, frameworks, libraries, infrastructure and tooling |
-| Version | 1.0 (Draft) |
+| Version | 1.1 (Draft) – diagram links updated |
 | Date | 11 October 2026 |
 | Status | Draft – for review |
-| Related | kuwenta-requirements.md, kuwenta-external-apis.md, kuwenta-aws-prd.drawio.svg |
+| Related | kuwenta-requirements.md, kuwenta-external-apis.md, design/kuwenta-aws-overview.drawio.svg |
 
 ## 1. Purpose
 
@@ -130,7 +130,7 @@ kuwenta/
 │  ├─ modules/             Terraform modules
 │  └─ envs/                staging/ and prd/ (separate state)
 ├─ fixtures/               Sanitized receipts and statements for tests
-├─ docs/                   Requirements, diagrams, this document
+├─ docs/                   Requirements, tech stack, external APIs; diagrams in docs/design/
 └─ docker-compose.yml      Postgres 16 + DynamoDB Local
 ```
 

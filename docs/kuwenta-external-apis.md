@@ -4,10 +4,10 @@
 |---|---|
 | Project | Kuwenta – personal finance and expense tracker |
 | Document | Third-party APIs: what is called, by which component, with what data, and how failures are handled |
-| Version | 1.0 (Draft) |
+| Version | 1.1 (Draft) – diagram links updated |
 | Date | 11 October 2026 |
 | Status | Draft – for review |
-| Related | kuwenta-requirements.md, kuwenta-tech-stack.md, kuwenta-sequence.drawio.svg |
+| Related | kuwenta-requirements.md, kuwenta-tech-stack.md, design/kuwenta-sequence-diagram.drawio.svg |
 
 ## 1. Overview
 
